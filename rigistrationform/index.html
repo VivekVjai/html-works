@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1><u>Registration Form</u></h1>
+    </section>
+
+  <fieldset> <!-- entire form oru fieldil kondu veran allel oru bordernu akathu kondu veran ulla tag aanu fieldset-->
+
+    <legend>Registration</legend>  <!-- fiedset nu oru name kodukkan ulla tag aanu legend tag-->
+
+        <form action="">  <!--entire form lastil submit cheyandathu kond 'form tag' il ayirikkanam ellam cheyunnath-->
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="enter first name" id="fname"> <!--palceholder kodukunnathu water mark kodukkan aanu text boxil-->
+            </div>
+    
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="enter the last name" id="lname">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="Email" placeholder="enter the email address" id="email">
+            </div>
+    
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="enter the password" id="password"> <!--password type koduthal hide aayirikkum text-->
+            </div>
+    
+            <div>
+                <label for="">Gender:</label>
+                <label for="">Male</label><input type="radio" name="gender" value="male">  <!--radio koduthal male kazhinju oru select button veran text kduthal text buttonae veru-->
+                <label for="">Female</label><input type="radio" name="gender" value="female"> <!--same name different value koduthal orennam mathram select cheyyan patullu-->
+                <label for="">Others</label><input type="radio" name="gender" value="others">
+            </div>
+    
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age">
+            </div>
+    
+            <div>
+                    <label for="">Preferance: </label>
+        
+                    <label for="">acrylic painting</label><input type="checkbox">
+                    <label for="">oil painting</label><input type="checkbox">
+                    <label for="">water colour painting</label><input type="checkbox">
+            </div>
+    
+            <div>
+                <label for="">Occupation</label>
+    
+                <select name="" id=""> <!--select tag koduthal select box verum select ntae child tag aayittu option tag-->
+                    <option value="student">student</option>  <!--value il student koduthathu backenleku pass cheyyan adutha student display cheyan boxil-->
+                    <option value="working">working</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="">Bio</label>
+                <textarea name="" id="" rows="5" cols="50" placeholder="enter something about you..." ></textarea>
+            </div>
+    
+            <div>
+                <label for="">DOB</label>
+                <input type="date">
+            </div>
+    
+            <div>
+    
+                <button type="submit">submit</button>
+    
+                <button type="reset">reset</button>
+    
+            </div>
+        </form>
+  </fieldset>
+</body>
+</html>
